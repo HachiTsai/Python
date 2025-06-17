@@ -14,7 +14,7 @@ def emotion_predict(text_to_analyse):
     # 轉成 dict
     return response.json() if response.headers.get('Content-Type','').startswith('application/json') else json.loads(response.text)
 
-def emotion_detector(text):
+def emotion_detector(text):  # sourcery skip: extract-method
     """
     Watson NLP Emotion Predict API，回傳指定格式的情緒分數與主導情緒。
     """
