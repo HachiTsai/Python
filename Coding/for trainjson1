@@ -1,0 +1,16 @@
+{
+  "valves": {
+    "XV_1120": {
+      "condition_signal": "PI_1120.HH",
+      "action": "open",
+      "sequence": "SEQ-010-002",
+      "group": "GRP200",
+      "operation": "OPE210"
+    }
+  },
+  "sensors": {
+    "PT1120": {
+      "loop_ids": ["NO.025", "NO.026"]
+    }
+  }
+}
