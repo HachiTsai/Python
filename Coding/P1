@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #代入test_va的值    
 test_va = (((2**11)+(9+6)/3-4)*5)
 print (test_va)
@@ -8,3 +9,39 @@ var2 = (var1/2) + 3
 var3 = (var1+var2)
 print(var3)
 
+=======
+#價格函數: 晚餐花費 DinnerCost
+def DinnerCost(price, tax_rate=0.05, tip_rate=0.15):
+    """
+    計算晚餐的總花費，包括稅金和小費。
+    
+    參數:
+    price (float): 晚餐的基本價格。
+    tax_rate (float): 稅率，默認為0.05（5%）。
+    tip_rate (float): 小費率，默認為0.15（15%）。
+    
+    返回:
+    float: 晚餐的總花費。
+    """
+    tax = price * tax_rate
+    tip = price * tip_rate
+    total_cost = price + tax + tip
+    return total_cost
+# 測試 DinnerCost 函數
+if __name__ == "__main__":
+    price = 100.0  # 晚餐基本價格
+    total_cost = DinnerCost(price)
+    print(f"晚餐的總花費為: {total_cost:.2f} 元")
+    
+    # 測試不同的稅率和小費率
+    custom_tax_rate = 0.07  # 自定義稅率
+    custom_tip_rate = 0.20  # 自定義小費率
+    custom_total_cost = DinnerCost(price, custom_tax_rate, custom_tip_rate)
+    print(f"自定義稅率和小費率下，晚餐的總花費為: {custom_total_cost:.2f} 元")# 定義一個回傳連續文字的函數
+def greet(name):
+    return f"你好，{name}！歡迎來到 Python 的世界。"
+
+# 呼叫函數並輸出結果
+result = greet("Hachi")
+print(result)
+>>>>>>> 0f6f08dd9e43d60cdef45f21563d92eec7707569
