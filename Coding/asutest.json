@@ -1,0 +1,16 @@
+{
+  "valves": {
+    "valve1": {
+      "condition_signal": "open",
+      "action": "start",
+      "sequence": "seq1",
+      "group": "A",
+      "operation": "auto"
+    }
+  },
+  "sensors": {
+    "sensor1": {
+      "loop_ids": ["loop1", "loop2"]
+    }
+  }
+}
